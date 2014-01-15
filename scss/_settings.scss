@@ -1,0 +1,30 @@
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
