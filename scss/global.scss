@@ -1,6 +1,9 @@
+$linkLtBlue: #529fff;
+$linkDkBlue: #3670b9;
 @import "compass/css3";
 @import "mixins";
 @import "settings";
+@import "tooltip";
 
 body {
   position: relative;
@@ -22,15 +25,25 @@ header {
   height: 100px;
 }
 
+a {
+  color: $linkLtBlue;
+  &:hover {
+    color: $linkDkBlue;
+  }
+}
+
 section.main {
   padding-bottom: 65px;
   .leftside {
     width: 25%;
   }
   .rightside {
-    @include font-size(26);
-    line-height: 1.6em;
+    @include font-size(22);
+    line-height: 1.5em;
     width: 70%;
+    p {
+      margin: 7px 0;
+    }
   }
 }
 
@@ -41,6 +54,9 @@ section.portfolio {
   .rightside {
     width: 25%;
     @include font-size(18);
+    .info {
+      display: none;
+    }
   }
 }
 
